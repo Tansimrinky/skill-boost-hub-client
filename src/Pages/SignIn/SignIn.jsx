@@ -1,8 +1,51 @@
 import { Helmet } from "react-helmet-async";
 import { FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const SignIn = () => {
+
+    const { signIn , googleSignIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+  
+    const handleLogIn = (e) => {
+      e.preventDefault();
+      const form = new FormData(e.currentTarget);
+      const email = form.get("email");
+      const password = form.get("password");
+      signIn(email, password)
+        .then((result) => {
+          Swal.fire("Successfully Logged in ..");
+          navigate(location?.state ? location.state : "/");
+          return result.user;
+        })
+        .catch((error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: error.message,
+          });
+        });
+    };
+  
+    const handleGoogle = () => {
+      googleSignIn()
+        .then((result) => {
+          Swal.fire("Successfullly logged in..");
+          console.log(result.user);
+        })
+        .catch((error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: error.message,
+          });
+        });
+    
+      }
   return (
     <div
       style={{
@@ -22,10 +65,10 @@ const SignIn = () => {
             <label className="label">
                 <span className="label-text font-bold text-3xl">Sign in with Google</span>
               </label>
-                <button className="text-blue-500 text-center btn btn-outline border-0 border-b-4  border-blue-500 font-bold text-3xl w-full mt-6  "><FaGoogle /></button>
+                <button onClick={handleGoogle} className="text-blue-500 text-center btn btn-outline border-0 border-b-4  border-blue-500 font-bold text-3xl w-full mt-6  "><FaGoogle /></button>
                 <div className="divider">OR</div>
             </div> 
-          <form className="card-body">
+          <form onSubmit={handleLogIn} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-bold text-3xl">Email</span>
