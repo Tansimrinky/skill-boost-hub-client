@@ -10,6 +10,8 @@ const SignIn = () => {
     const { signIn , googleSignIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
+
   
     const handleLogIn = (e) => {
       e.preventDefault();

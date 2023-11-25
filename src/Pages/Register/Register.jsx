@@ -1,11 +1,16 @@
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { useContext } from 'react';
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
+import { updateProfile } from "firebase/auth";
 
 
 
 
 const Register = () => {
+    const {createUser} = useContext(AuthContext)
 
     const {
         register,
@@ -16,6 +21,29 @@ const Register = () => {
 
       const onSubmit = (data) => {
         console.log(data)
+        createUser(data.email, data.password)
+        .then(result => { 
+          Swal.fire('Successfully registered your account..')
+          updateProfile(result.user, {
+            displayName: data.name, 
+            photoURL: data.photo
+          })
+          .then(() => {
+            //profile updated
+          })
+          .catch(()=>{
+            Swal.fire("An error occured. Profile is not updated.")
+          })
+          
+        })
+        .catch(error => {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: error.message,
+              });
+
+        })
         reset();
       }
 

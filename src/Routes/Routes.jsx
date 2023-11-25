@@ -6,6 +6,7 @@ import AllClasses from "../Pages/AllClasses/AllClasses";
 import TeachOnSkillBoost from "../Pages/TeachOnSkillBoost/TeachOnSkillBoost";
 import SignIn from "../Pages/SignIn/SignIn";
 import Register from "../Pages/Register/Register";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 export const  router = createBrowserRouter([
     {
@@ -17,11 +18,11 @@ export const  router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/allClasses',
+                path: '/classes',
                 element: <AllClasses></AllClasses>
             },
             {
-                path: '/teachOnSkillBoost',
+                path: '/teach',
                 element: <TeachOnSkillBoost></TeachOnSkillBoost>
             },
             {
@@ -31,6 +32,9 @@ export const  router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },{
+                path: '/dashboard',
+                element: <Dashboard></Dashboard>
             }
         ]
 
