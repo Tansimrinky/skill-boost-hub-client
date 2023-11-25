@@ -3,7 +3,8 @@ import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWith
 
 import PropTypes from 'prop-types';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import app from "../Firebase/firebase.init";
+import { app } from "../Firebase/firebase.config";
+
 
 
 
