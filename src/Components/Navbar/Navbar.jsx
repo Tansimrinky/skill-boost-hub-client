@@ -55,20 +55,20 @@ const Navbar = () => {
                   </label>
                   <ul
                     tabIndex={0}
-                    className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4 "
+                    className="menu dropdown-content z-[1]  shadow bg-base-100 rounded-box w-52 mt-4 text-center"
                   >
                     <span className="username font-bold text-slate-600">{user.displayName}</span>
                     <div  className="font-bold text-slate-600">
                       <Link to="/dashboard">Dashboard</Link>
                     </div>
-                    <button className="font-bold text-slate-600" onClick={handleLogOut}>Logout</button>
+                    <button className="font-bold btn  bg-blue-500 text-center text-white"  onClick={handleLogOut}>Logout</button>
                   </ul>
                 </div>
               </div>
             </div>
           ) : (
             // If the user is not logged in, show Sign In button
-            <Link to="/signIn">Sign In</Link>
+            <Link className="font-bold btn bg-blue-500 text-center text-white" to="/signIn">Sign In</Link>
           )}
         </div>
       </div>
@@ -116,15 +116,14 @@ const Navbar = () => {
                     <div>
                       <Link to="/dashboard">Dashboard</Link>
                     </div>
-                    <button onClick={handleLogOut}>Logout</button>
-                    <div></div>
+                    <button className="font-bold btn bg-blue-500 text-center text-white" onClick={handleLogOut}>Logout</button>
                   </ul>
                 </div>
               </div>
             </div>
           ) : (
             // If the user is not logged in, show Sign In button
-            <Link to="/signIn">Sign In</Link>
+            <Link className="font-bold btn bg-blue-500 text-center text-white" to="/signIn">Sign In</Link>
           )}
       </div>
     </div>
