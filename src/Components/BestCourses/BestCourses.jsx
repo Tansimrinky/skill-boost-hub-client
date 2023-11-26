@@ -11,7 +11,7 @@ import SectionTitle from "../SectionTitle/SectionTilte";
 const BestCourses = () => {
     const [courses, setCourses] = useState([]);
     useEffect(() => {
-        fetch('courses.json')
+        fetch('http://localhost:5000/courses')
         .then(res => res.json())
         .then(data => {
             setCourses(data)
