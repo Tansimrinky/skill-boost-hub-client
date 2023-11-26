@@ -1,7 +1,11 @@
+import PropTypes from 'prop-types';
+
 const BestCourseCard = ({course}) => {
     const {title, image, price, total_enrollment, instructor_name} = course || {}
   return (
-    <div className="flex justify-center">
+   <div>
+      
+     <div className="flex justify-center">
       <div className="card card-compact w-[700px] bg-base-100 shadow-xl">
         <figure>
           <img
@@ -19,7 +23,10 @@ const BestCourseCard = ({course}) => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
-
+BestCourseCard.propTypes = {
+    course: PropTypes.object
+}
 export default BestCourseCard;
