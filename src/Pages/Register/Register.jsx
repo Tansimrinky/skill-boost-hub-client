@@ -5,12 +5,14 @@ import { useContext } from 'react';
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { updateProfile } from "firebase/auth";
+import useAxiosPublic from "../../hooks/useAxiosPublic/useAxiosPublic";
 
 
 
 
 const Register = () => {
     const {createUser} = useContext(AuthContext)
+    const  axiosPublic = useAxiosPublic();
 
     const {
         register,
@@ -23,7 +25,18 @@ const Register = () => {
         console.log(data)
         createUser(data.email, data.password)
         .then(result => { 
-          Swal.fire('Successfully registered your account..')
+          const userInfo = {
+            name: data.name,
+            email: data.email
+
+          }
+          axiosPublic.post('/users', userInfo)
+          .then(res => {
+            if(res.data.insertedId){
+              Swal.fire('Successfully registered your account..')
+              reset()
+            }
+          })
           updateProfile(result.user, {
             displayName: data.name, 
             photoURL: data.photo
