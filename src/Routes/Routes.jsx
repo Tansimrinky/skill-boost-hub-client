@@ -7,6 +7,8 @@ import TeachOnSkillBoost from "../Pages/TeachOnSkillBoost/TeachOnSkillBoost";
 import SignIn from "../Pages/SignIn/SignIn";
 import Register from "../Pages/Register/Register";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import PrivateRoute from "./PrivateRoutes";
+import Details from "../Pages/Details/Details";
 
 export const  router = createBrowserRouter([
     {
@@ -33,9 +35,14 @@ export const  router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
-            },{
+            },
+            {
                 path: '/dashboard',
-                element: <Dashboard></Dashboard>
+                element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+            },
+            {
+                path: '/course/:id',
+                element: <PrivateRoute><Details></Details></PrivateRoute>
             }
         ]
 

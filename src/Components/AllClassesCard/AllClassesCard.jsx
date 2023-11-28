@@ -1,9 +1,11 @@
 import { FaShareAlt } from "react-icons/fa";
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 
 const AllClassesCard = ({ course }) => {
   const {
+    _id,
     title,
     name,
     image,
@@ -42,7 +44,7 @@ const AllClassesCard = ({ course }) => {
           <p>{short_description}</p>
           <div className="card-actions justify-end">
             <p>Price: ${price}</p>
-            <button className="btn btn-primary">Enroll Now</button>
+            <Link to={`/course/${_id}`}><button className="btn bg-blue-500 text-white">Enroll Now</button></Link>
           </div>
         </div>
       </div>
