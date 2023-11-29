@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 const DetailsCard = ({ course }) => {
   const {
+    _id,
     title,
     name,
     image,
@@ -40,7 +43,7 @@ const DetailsCard = ({ course }) => {
           </div>
 
           <div className="card-actions justify-end">
-            <button className="btn bg-blue-500 text-white font-bold ">Pay</button>
+            <Link to={`/dashboard/payment/${_id}`}><button className="btn bg-blue-500 text-white font-bold ">Pay</button></Link>
           </div>
         </div>
       </div>

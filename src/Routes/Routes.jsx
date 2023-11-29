@@ -6,9 +6,12 @@ import AllClasses from "../Pages/AllClasses/AllClasses";
 import TeachOnSkillBoost from "../Pages/TeachOnSkillBoost/TeachOnSkillBoost";
 import SignIn from "../Pages/SignIn/SignIn";
 import Register from "../Pages/Register/Register";
-import Dashboard from "../Pages/Dashboard/Dashboard";
+
 import PrivateRoute from "./PrivateRoutes";
 import Details from "../Pages/Details/Details";
+import EnrollClass from "../Pages/EnrollClass/EnrollClass";
+import MyEnrollClass from "../Pages/MyEnrollClass/MyEnrollClass";
+import Dashboard from "../Layout/Dashboard/Dashboard";
 
 export const  router = createBrowserRouter([
     {
@@ -43,6 +46,15 @@ export const  router = createBrowserRouter([
             {
                 path: '/course/:id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>
+            },
+            // user/students routes
+            {
+                path: '/dashboard/payment/:id',
+                element: <PrivateRoute><EnrollClass></EnrollClass></PrivateRoute>
+            },
+            {
+                path: '/dashboard/my-enroll-class',
+                element: <PrivateRoute><MyEnrollClass></MyEnrollClass></PrivateRoute>
             }
         ]
 
