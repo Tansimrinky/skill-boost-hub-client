@@ -15,6 +15,8 @@ import Dashboard from "../Layout/Dashboard/Dashboard";
 import MyProfile from "../Pages/MyProfile/MyProfile";
 import EnrollClassDetails from "../Pages/EnrollClassDetails/EnrollClassDetails";
 import TeacherRequest from "../Pages/AdminPages/TeacherRequest/TeacherRequest";
+import AllUsers from "../Pages/AdminPages/TeacherRequest/AllUsers/AllUsers";
+import AddClass from "../Pages/AddClass/AddClass";
 
 export const  router = createBrowserRouter([
     {
@@ -79,6 +81,15 @@ export const  router = createBrowserRouter([
             {
                 path: "/dashboard/teacher-request",
                 element: <TeacherRequest></TeacherRequest>
+            },
+            {
+                path: "/dashboard/users",
+                element: <AllUsers></AllUsers>
+            },
+            // teacher Dashboard
+            {
+                path: '/dashboard/add-class',
+                element: <AddClass></AddClass>
             }
         ]
     }

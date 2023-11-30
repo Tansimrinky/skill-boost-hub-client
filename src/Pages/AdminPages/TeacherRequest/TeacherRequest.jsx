@@ -31,7 +31,7 @@ const TeacherRequest = () => {
   console.log(matchedObject[0]?._id);
   const id = matchedObject[0]?._id;
   const handleApprove = (id, req) => {
-    axiosSecure.patch(`/users/admin/${id}`).then((res) => {
+    axiosSecure.patch(`/users/teacher/${id}`).then((res) => {
       console.log(res.data);
       if (res.data.modifiedCount > 0) {
         Swal.fire({
