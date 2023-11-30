@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "_id": "6563b5e695b94fa5b6bf9b3b",
+        "title": "Data Science Essentials",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Data Science"},
+            {"assignment_id": 2, "title": "Data Analysis Techniques"},
+            {"assignment_id": 3, "title": "Machine Learning Basics"},
+            {"assignment_id": 4, "title": "Statistical Modeling in Python"},
+            {"assignment_id": 5, "title": "Big Data Analytics"}
+        ]
+    },
+    {
+        "id": 2,
+        "_id": "6563b5e695b94fa5b6bf9b39",
+        "title": "Web Development Bootcamp",
+        "assignments": [
+            {"assignment_id": 1, "title": "HTML Basics"},
+            {"assignment_id": 2, "title": "CSS Styling"},
+            {"assignment_id": 3, "title": "JavaScript Fundamentals"},
+            {"assignment_id": 4, "title": "Responsive Design"},
+            {"assignment_id": 5, "title": "Full-Stack Project"}
+        ]
+    },
+    {
+        "id": 3,
+        "_id": "6563b5e695b94fa5b6bf9b3f",
+        "title": "UX/UI Design",
+        "assignments": [
+            {"assignment_id": 1, "title": "User Research"},
+            {"assignment_id": 2, "title": "Wireframing"},
+            {"assignment_id": 3, "title": "Prototyping"},
+            {"assignment_id": 4, "title": "Visual Design Principles"},
+            {"assignment_id": 5, "title": "Usability Testing"}
+        ]
+    },
+    {
+        "id": 4,
+        "_id": "6563b5e695b94fa5b6bf9b44",
+        "title": "Video Editing Mastery",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Video Editing"},
+            {"assignment_id": 2, "title": "Cutting and Splicing Techniques"},
+            {"assignment_id": 3, "title": "Color Grading"},
+            {"assignment_id": 4, "title": "Audio Editing"},
+            {"assignment_id": 5, "title": "Advanced Video Effects"}
+        ]
+    },
+    {
+        "id": 5,
+        "_id": "6563b5e695b94fa5b6bf9b3d",
+        "title": "Mobile App Development",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Mobile App Development"},
+            {"assignment_id": 2, "title": "UI/UX for Mobile Apps"},
+            {"assignment_id": 3, "title": "Building a Basic App"},
+            {"assignment_id": 4, "title": "Implementing Backend Services"},
+            {"assignment_id": 5, "title": "Testing and Deployment"}
+        ]
+    },
+    {
+        "id": 6,
+        "_id": "6563b5e695b94fa5b6bf9b40",
+        "title": "Cybersecurity Fundamentals",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Cybersecurity"},
+            {"assignment_id": 2, "title": "Network Security"},
+            {"assignment_id": 3, "title": "Cryptography"},
+            {"assignment_id": 4, "title": "Ethical Hacking"},
+            {"assignment_id": 5, "title": "Incident Response"}
+        ]
+    },
+    {
+        "id": 7,
+        "_id": "6563b5e695b94fa5b6bf9b47",
+        "title": "Java Programming",
+        "assignments": [
+            {"assignment_id": 1, "title": "Java Basics"},
+            {"assignment_id": 2, "title": "Object-Oriented Programming"},
+            {"assignment_id": 3, "title": "Data Structures in Java"},
+            {"assignment_id": 4, "title": "Java Swing GUI"},
+            {"assignment_id": 5, "title": "Java Database Connectivity"}
+        ]
+    },
+    {
+        "id": 8,
+        "_id": "6563b5e695b94fa5b6bf9b43",
+        "title": "Artificial Intelligence Basics",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to AI"},
+            {"assignment_id": 2, "title": "Machine Learning Algorithms"},
+            {"assignment_id": 3, "title": "Natural Language Processing"},
+            {"assignment_id": 4, "title": "Computer Vision"},
+            {"assignment_id": 5, "title": "AI Ethics and Bias"}
+        ]
+    },
+    {
+        "id": 9,
+        "_id": "6563b5e695b94fa5b6bf9b41",
+        "title": "Financial Literacy 101",
+        "assignments": [
+            {"assignment_id": 1, "title": "Budgeting Basics"},
+            {"assignment_id": 2, "title": "Investment Strategies"},
+            {"assignment_id": 3, "title": "Understanding Credit Scores"},
+            {"assignment_id": 4, "title": "Retirement Planning"},
+            {"assignment_id": 5, "title": "Financial Goal Setting"}
+        ]
+    },
+    {
+        "id": 10,
+        "_id": "6563b5e695b94fa5b6bf9b48",
+        "title": "Fitness Training 101",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Fitness Training"},
+            {"assignment_id": 2, "title": "Strength Training Techniques"},
+            {"assignment_id": 3, "title": "Cardiovascular Exercise"},
+            {"assignment_id": 4, "title": "Nutrition for Fitness"},
+            {"assignment_id": 5, "title": "Creating Personalized Fitness Plans"}
+        ]
+    },
+    {
+        "id": 11,
+        "_id": "6563b5e695b94fa5b6bf9b38",
+        "title": "Mastering Python Programming",
+        "assignments": [
+            {"assignment_id": 1, "title": "Python Basics"},
+            {"assignment_id": 2, "title": "Working with Python Libraries"},
+            {"assignment_id": 3, "title": "Web Scraping with Python"},
+            {"assignment_id": 4, "title": "Data Visualization with Matplotlib"},
+            {"assignment_id": 5, "title": "Building Python Applications"}
+        ]
+    },
+    {
+        "id": 12,
+        "_id": "6563b5e695b94fa5b6bf9b3a",
+        "title": "Digital Marketing Fundamentals",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Digital Marketing"},
+            {"assignment_id": 2, "title": "Search Engine Optimization (SEO)"},
+            {"assignment_id": 3, "title": "Social Media Marketing Strategies"},
+            {"assignment_id": 4, "title": "Email Marketing Campaigns"},
+            {"assignment_id": 5, "title": "Digital Marketing Analytics"}
+        ]
+    },
+    {
+        "id": 13,
+        "_id": "6563b5e695b94fa5b6bf9b46",
+        "title": "Public Speaking Skills",
+        "assignments": [
+            {"assignment_id": 1, "title": "Overcoming Public Speaking Anxiety"},
+            {"assignment_id": 2, "title": "Structuring a Speech"},
+            {"assignment_id": 3, "title": "Effective Body Language"},
+            {"assignment_id": 4, "title": "Engaging the Audience"},
+            {"assignment_id": 5, "title": "Handling Q&A Sessions"}
+        ]
+    },
+    {
+        "id": 14,
+        "_id": "6563b5e695b94fa5b6bf9b3e",
+        "title": "Social Media Marketing",
+        "assignments": [
+            {"assignment_id": 1, "title": "Creating Compelling Social Media Content"},
+            {"assignment_id": 2, "title": "Social Media Advertising"},
+            {"assignment_id": 3, "title": "Building a Social Media Strategy"},
+            {"assignment_id": 4, "title": "Measuring Social Media ROI"},
+            {"assignment_id": 5, "title": "Influencer Marketing"}
+        ]
+    },
+    {
+        "id": 15,
+        "_id": "6563b5e695b94fa5b6bf9b49",
+        "title": "Blockchain Basics",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Blockchain Technology"},
+            {"assignment_id": 2, "title": "Smart Contracts"},
+            {"assignment_id": 3, "title": "Decentralized Finance (DeFi)"},
+            {"assignment_id": 4, "title": "Blockchain Security"},
+            {"assignment_id": 5, "title": "Blockchain in Supply Chain"}
+        ]
+    },
+    {
+        "id": 16,
+        "_id": "6563b5e695b94fa5b6bf9b3c",
+        "title": "Graphic Design Fundamentals",
+        "assignments": [
+            {"assignment_id": 1, "title": "Principles of Graphic Design"},
+            {"assignment_id": 2, "title": "Typography and Layout"},
+            {"assignment_id": 3, "title": "Logo Design"},
+            {"assignment_id": 4, "title": "Illustration Techniques"},
+            {"assignment_id": 5, "title": "Brand Identity Design"}
+        ]
+    },
+    {
+        "id": 17,
+        "_id": "6563b5e695b94fa5b6bf9b42",
+        "title": "E-commerce Essentials",
+        "assignments": [
+            {"assignment_id": 1, "title": "Setting up an E-commerce Store"},
+            {"assignment_id": 2, "title": "Payment Gateways and Security"},
+            {"assignment_id": 3, "title": "E-commerce Marketing Strategies"},
+            {"assignment_id": 4, "title": "Order Fulfillment and Logistics"},
+            {"assignment_id": 5, "title": "Customer Relationship Management (CRM)"}
+        ]
+    },
+    {
+        "id": 18,
+        "_id": "6563b5e695b94fa5b6bf9b4b",
+        "title": "Cloud Computing Fundamentals",
+        "assignments": [
+            {"assignment_id": 1, "title": "Introduction to Cloud Computing"},
+            {"assignment_id": 2, "title": "Cloud Service Models (IaaS, PaaS, SaaS)"},
+            {"assignment_id": 3, "title": "Cloud Deployment Models"},
+            {"assignment_id": 4, "title": "Cloud Security Best Practices"},
+            {"assignment_id": 5, "title": "Serverless Computing"}
+        ]
+    },
+    {
+        "id": 19,
+        "_id": "6563b5e695b94fa5b6bf9b4a",
+        "title": "Spanish Language Course",
+        "assignments": [
+            {"assignment_id": 1, "title": "Basic Spanish Vocabulary"},
+            {"assignment_id": 2, "title": "Grammar Essentials"},
+            {"assignment_id": 3, "title": "Conversational Spanish"},
+            {"assignment_id": 4, "title": "Spanish Culture and Customs"},
+            {"assignment_id": 5, "title": "Spanish Language Project"}
+        ]
+    },
+    {
+        "id": 20,
+        "_id": "6563b5e695b94fa5b6bf9b45",
+        "title": "Photography Fundamentals",
+        "assignments": [
+            {"assignment_id": 1, "title": "Understanding Your Camera"},
+            {"assignment_id": 2, "title": "Composition Techniques"},
+            {"assignment_id": 3, "title": "Lighting Mastery"},
+            {"assignment_id": 4, "title": "Photo Editing"},
+            {"assignment_id": 5, "title": "Photography Project"}
+        ]
+    }
+]
