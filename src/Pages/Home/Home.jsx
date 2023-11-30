@@ -5,6 +5,8 @@ import BestCourses from "../../Components/BestCourses/BestCourses";
 import TeachingToday from "../../Components/TeachingToday/TeachingToday";
 import Reviews from "../../Components/Reviews/Reviews";
 import Information from "../../Components/Information/Information";
+import Help from "../../Components/Help/Help";
+import TopCategory from "../../Components/TopCategory/TopCategory";
 
 
 const Home = () => {
@@ -18,6 +20,8 @@ const Home = () => {
             <BestCourses></BestCourses>
             <Reviews></Reviews>
             <Information></Information>
+            <Help></Help>
+            <TopCategory></TopCategory>
             <TeachingToday></TeachingToday>
             
         </div>
