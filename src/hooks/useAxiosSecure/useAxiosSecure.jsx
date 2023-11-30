@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 export const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://skill-boost-hub-server.vercel.app'
 })
 const useAxiosSecure = () => {
     const navigate = useNavigate();
@@ -22,7 +22,7 @@ const useAxiosSecure = () => {
       axiosSecure.interceptors.response.use(function (response) {
         return response;
     }, async (error) => {
-        const status = error.response.status;
+        const status = error?.response?.status;
         if (status === 401 || status === 403) {
             await logOut();
             navigate('/SignIn');

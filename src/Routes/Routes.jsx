@@ -17,6 +17,7 @@ import EnrollClassDetails from "../Pages/EnrollClassDetails/EnrollClassDetails";
 import TeacherRequest from "../Pages/AdminPages/TeacherRequest/TeacherRequest";
 import AllUsers from "../Pages/AdminPages/TeacherRequest/AllUsers/AllUsers";
 import AddClass from "../Pages/AddClass/AddClass";
+import AdminAllCLass from "../Pages/AdminAllCLass/AdminAllCLass";
 
 export const  router = createBrowserRouter([
     {
@@ -30,7 +31,7 @@ export const  router = createBrowserRouter([
             {
                 path: '/classes',
                 element: <AllClasses></AllClasses>,
-                loader: () => fetch('http://localhost:5000/coursesCount')
+                loader: () => fetch('https://skill-boost-hub-server.vercel.app/coursesCount')
             },
             {
                 path: '/teach',
@@ -71,7 +72,7 @@ export const  router = createBrowserRouter([
             {
                 path: '/dashboard/my-enroll-class/:id',
                 element: <EnrollClassDetails></EnrollClassDetails>,
-                loader: () => fetch('http://localhost:5000/payments')
+                loader: () => fetch('https://skill-boost-hub-server.vercel.app/payments')
             },
             {
                 path: '/dashboard/my-profile',
@@ -86,10 +87,18 @@ export const  router = createBrowserRouter([
                 path: "/dashboard/users",
                 element: <AllUsers></AllUsers>
             },
+            {
+                path: "/dashboard/all-classes",
+                element: <AdminAllCLass></AdminAllCLass>
+            },
             // teacher Dashboard
             {
                 path: '/dashboard/add-class',
                 element: <AddClass></AddClass>
+            },
+            {
+                path: "/dashboard/profile",
+                element: <MyProfile></MyProfile>
             }
         ]
     }

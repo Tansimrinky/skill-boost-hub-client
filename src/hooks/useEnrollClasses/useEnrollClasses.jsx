@@ -8,7 +8,7 @@ const useEnrollClasses = () => {
     const [ loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/payments')
+        fetch('https://skill-boost-hub-server.vercel.app/payments')
         .then(res => res.json())
         .then(data => {
             setEnrollClass(data);

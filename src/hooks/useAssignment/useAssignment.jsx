@@ -5,7 +5,7 @@ const useAssignment = () => {
     const [ loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/assignments')
+        fetch('https://skill-boost-hub-server.vercel.app/assignments')
         .then(res => res.json())
         .then(data => {
             setAssignment(data);

@@ -6,7 +6,7 @@ const useTeacherReq = () => {
     const [ loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/teachReq')
+        fetch('https://skill-boost-hub-server.vercel.app/teachReq')
         .then(res => res.json())
         .then(data => {
             setTeachReq(data);
