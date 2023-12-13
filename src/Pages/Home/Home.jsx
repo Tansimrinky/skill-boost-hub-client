@@ -7,6 +7,7 @@ import Reviews from "../../Components/Reviews/Reviews";
 import Information from "../../Components/Information/Information";
 import Help from "../../Components/Help/Help";
 import TopCategory from "../../Components/TopCategory/TopCategory";
+import Contact from "../../Components/Contact/Contact";
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
             <Help></Help>
             <TopCategory></TopCategory>
             <TeachingToday></TeachingToday>
+            <Contact></Contact>
             
         </div>
     );
