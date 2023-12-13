@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="m-5">
       <div>
         <div className="flex justify-center gap-6">
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -56,7 +56,7 @@ const Contact = () => {
               <label>Message</label>
               <textarea className="input input-bordered" name="message" />
               <input
-                className="btn bg-[#400e0e] text-white"
+                className="btn bg-blue-600 text-white"
                 type="submit"
                 value="Send"
               />
